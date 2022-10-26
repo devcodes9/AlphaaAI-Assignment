@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React, {Fragment, useEffect, useState} from 'react'
 import ReactEcharts from "echarts-for-react";
 import Axios from 'axios'
 import { IAlphaaChart } from './IAlphaaChart';
+import '../App.css'
 
 export const AlphaaChart = () => {
   const [saleData, setData] = useState([]);
@@ -180,9 +181,11 @@ export const AlphaaChart = () => {
   return (
     <div>
       <h1>Accumulated Waterfall Chart</h1>
-      <ReactEcharts option={option}
-            style={{ height: "90vh", maxWidth: "80rem" }} />
-      <IAlphaaChart profDiff = {profDiff} lossDiff = {lossDiff} />
+      <div className = "container">
+      <div><ReactEcharts option={option}
+            style={{ height: "80vh", maxWidth: "100vw" }} /></div>
+            <div><IAlphaaChart profDiff = {profDiff} lossDiff = {lossDiff} /></div>
+      </div>
     </div>
   )
 }

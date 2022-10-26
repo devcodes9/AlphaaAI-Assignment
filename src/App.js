@@ -4,7 +4,7 @@ import { IAlphaaChart } from './components/IAlphaaChart';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
     <AlphaaChart />
     </div>
   );
