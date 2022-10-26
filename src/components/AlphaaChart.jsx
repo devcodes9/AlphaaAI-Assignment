@@ -77,8 +77,6 @@ export const AlphaaChart = () => {
   }
 
   var helper = [...helpProf.slice(0, helpProf.length - 1), ...helpLoss];
-    console.log(helper);
-    console.log(helpProf)
     var totalProf = 0;
     profDiff?.map((ele) => {
       totalProf += ele.prof;

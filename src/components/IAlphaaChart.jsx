@@ -27,7 +27,7 @@ export const IAlphaaChart = (props) => {
     //   <li>{Number((profitSum + lossSum).toFixed(2))}</li>
     // </div>
     <div>
-      <h4>Net Change</h4>
+      <div className='net'><h4>Net Change</h4></div>
       <div className='summary'>
       <div className='items'>
         <p>Profit</p>
